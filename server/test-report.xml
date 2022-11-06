@@ -1,71 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="C:\Users\Philippe Lee\Desktop\sonarfix\server\test\supervisor.controller.spec.ts">
-    <testCase name="SupervisorController should be defined" duration="44"/>
+    <testCase name="SupervisorController should be defined" duration="35"/>
     <testCase name="SupervisorController Get all Supervisors Get() Calls supervisor Service method getSupervisors()" duration="3"/>
-    <testCase name="SupervisorController Get a Supervisor by ID method is being called" duration="13"/>
+    <testCase name="SupervisorController Get a Supervisor by ID method is being called" duration="12"/>
     <testCase name="SupervisorController method is not returning null" duration="3"/>
     <testCase name="SupervisorController Create Supervisor Post Request calling the createsupervisor method with param" duration="3"/>
-    <testCase name="SupervisorController ensuring the param is not null" duration="2"/>
+    <testCase name="SupervisorController ensuring the param is not null" duration="3"/>
   </file>
   <file path="C:\Users\Philippe Lee\Desktop\sonarfix\server\test\nurse.controller.spec.ts">
     <testCase name="NurseController Unit Tests should be defined" duration="20"/>
     <testCase name="NurseController Unit Tests Get All Nurses Get() Calls nurse Service method getNurses()" duration="3"/>
-    <testCase name="NurseController Unit Tests Get a Nurse By ID method is being called" duration="5"/>
+    <testCase name="NurseController Unit Tests Get All Nurses Get() Calls nurse Service method getNurses()" duration="3"/>
+    <testCase name="NurseController Unit Tests Get a Nurse By ID method is being called" duration="4"/>
     <testCase name="NurseController Unit Tests Get a Nurse By ID method is not returning null" duration="2"/>
-    <testCase name="NurseController Unit Tests Create Nurse Post Request calling the createnurse method with param" duration="3"/>
+    <testCase name="NurseController Unit Tests Create Nurse Post Request calling the createnurse method with param" duration="5"/>
     <testCase name="NurseController Unit Tests Create Nurse Post Request ensuring the param is not null" duration="2"/>
   </file>
   <file path="C:\Users\Philippe Lee\Desktop\sonarfix\server\test\request.service.spec.ts">
-    <testCase name="RequestService should be defined" duration="9"/>
+    <testCase name="RequestService should be defined" duration="10"/>
     <testCase name="RequestService find request by ID called with expected params" duration="3"/>
     <testCase name="RequestService find request by ID is called" duration="2"/>
     <testCase name="RequestService create request called with expected params" duration="2"/>
     <testCase name="RequestService create request is called" duration="2"/>
-    <testCase name="RequestService get requests is called" duration="4"/>
-    <testCase name="RequestService delete request by ID called with expected params" duration="2"/>
+    <testCase name="RequestService get requests is called" duration="1"/>
+    <testCase name="RequestService delete request by ID called with expected params" duration="5"/>
     <testCase name="RequestService delete request by ID is called" duration="2"/>
-    <testCase name="RequestService Filter Requests by Supervisor ID, is called" duration="2"/>
+    <testCase name="RequestService Filter Requests by Supervisor ID, is called" duration="3"/>
     <testCase name="RequestService Filter Requests by Supervisor ID, is called with params" duration="2"/>
     <testCase name="RequestService Filter Requests by status, is called" duration="2"/>
     <testCase name="RequestService Filter Requests by status, is called with params" duration="2"/>
     <testCase name="RequestService totalAmountOfRequests called" duration="2"/>
-    <testCase name="RequestService totalAmountOfRequests called with expected params" duration="2"/>
-    <testCase name="RequestService totalAmountOfRequestsPerStatus called" duration="1"/>
-    <testCase name="RequestService totalAmountOfRequestsPerStatus called with expected params" duration="2"/>
+    <testCase name="RequestService totalAmountOfRequests called with expected params" duration="1"/>
+    <testCase name="RequestService totalAmountOfRequestsPerStatus called" duration="2"/>
+    <testCase name="RequestService totalAmountOfRequestsPerStatus called with expected params" duration="1"/>
   </file>
   <file path="C:\Users\Philippe Lee\Desktop\sonarfix\server\test\request.controller.spec.ts">
     <testCase name="RequestController should be defined" duration="10"/>
     <testCase name="RequestController Get Requests Get all the requests to have been called" duration="3"/>
     <testCase name="RequestController Get Requests Get Requests by id to have been called" duration="2"/>
-    <testCase name="RequestController Get Requests Get Requests is called with Params" duration="3"/>
-    <testCase name="RequestController Post Requests Create a Request, method is called" duration="2"/>
+    <testCase name="RequestController Get Requests Get Requests is called with Params" duration="2"/>
+    <testCase name="RequestController Post Requests Create a Request, method is called" duration="3"/>
     <testCase name="RequestController Post Requests Create a Request, with required params used" duration="2"/>
     <testCase name="RequestController Delete Requests delete a request, method is called" duration="2"/>
-    <testCase name="RequestController Delete Requests delete a request, params are used" duration="4"/>
-    <testCase name="RequestController Filter Requests by status filters a request (status and page), method is called" duration="2"/>
+    <testCase name="RequestController Delete Requests delete a request, params are used" duration="2"/>
+    <testCase name="RequestController Filter Requests by status filters a request (status and page), method is called" duration="5"/>
     <testCase name="RequestController Filter Requests by status filters a request (status and page), method is called with params" duration="2"/>
-    <testCase name="RequestController Filter Requests by Supervisor ID filters a request (status and page), method is called" duration="1"/>
-    <testCase name="RequestController Filter Requests by Supervisor ID filters a request (status and page), method is called with params" duration="1"/>
-    <testCase name="RequestController Get Amount of Requests getTotalAmountOfRequestsPerStatusBySupervisorId is Called" duration="1"/>
-    <testCase name="RequestController Get Amount of Requests getTotalAmountOfRequestsPerStatusBySupervisorId is Called With Params" duration="2"/>
-    <testCase name="RequestController Get Amount of Requests getTotalAmountOfRequestsBySupervisorId is Called" duration="1"/>
+    <testCase name="RequestController Filter Requests by Supervisor ID filters a request (status and page), method is called" duration="2"/>
+    <testCase name="RequestController Filter Requests by Supervisor ID filters a request (status and page), method is called with params" duration="2"/>
+    <testCase name="RequestController Get Amount of Requests getTotalAmountOfRequestsPerStatusBySupervisorId is Called" duration="2"/>
+    <testCase name="RequestController Get Amount of Requests getTotalAmountOfRequestsPerStatusBySupervisorId is Called With Params" duration="1"/>
+    <testCase name="RequestController Get Amount of Requests getTotalAmountOfRequestsBySupervisorId is Called" duration="2"/>
     <testCase name="RequestController Get Amount of Requests getTotalNumberOfRequestsPerStatus is Called With Params" duration="2"/>
   </file>
   <file path="C:\Users\Philippe Lee\Desktop\sonarfix\server\test\nurse.service.spec.ts">
     <testCase name="NurseService should be defined" duration="10"/>
-    <testCase name="NurseService find nurse by ID called with expected params" duration="3"/>
+    <testCase name="NurseService find nurse by ID called with expected params" duration="2"/>
     <testCase name="NurseService find nurse by ID is called" duration="2"/>
-    <testCase name="NurseService create nurse called with expected params" duration="1"/>
-    <testCase name="NurseService create nurse is called" duration="3"/>
+    <testCase name="NurseService create nurse called with expected params" duration="2"/>
+    <testCase name="NurseService create nurse is called" duration="2"/>
     <testCase name="NurseService get Nurses is called" duration="2"/>
-    <testCase name="NurseService get ANTOHA is called" duration="2"/>
+    <testCase name="NurseService get ANTOHA is called" duration="1"/>
   </file>
   <file path="C:\Users\Philippe Lee\Desktop\sonarfix\server\test\supervisor.service.spec.ts">
-    <testCase name="SupervisorService should be defined" duration="9"/>
-    <testCase name="SupervisorService find supervisor by ID with expected params" duration="2"/>
-    <testCase name="SupervisorService create supervisor with expected params" duration="2"/>
-    <testCase name="SupervisorService create supervisor is called" duration="2"/>
-    <testCase name="SupervisorService get supervisors is called" duration="2"/>
+    <testCase name="SupervisorService should be defined" duration="11"/>
+    <testCase name="SupervisorService find supervisor by ID with expected params" duration="4"/>
+    <testCase name="SupervisorService create supervisor with expected params" duration="5"/>
+    <testCase name="SupervisorService create supervisor is called" duration="3"/>
+    <testCase name="SupervisorService get supervisors is called" duration="3"/>
   </file>
 </testExecutions>
