@@ -1,0 +1,47 @@
+.dropzone-area {
+  padding-bottom: 40px;
+}
+
+.container-card {
+  width: 490px;
+  display: flex;
+  justify-content: center;
+}
+
+.request-card {
+  width: 650px;
+  display: flex;
+  background-color: #ffffff;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0px 30px 40px 30px;
+  box-shadow: 5px 5px 18px #888888;
+  border-radius: 10px;
+}
+
+.uploaded-file-container {
+  width: 100%;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.request-progress-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 640px) {
+  .request-tab {
+    font-size: 11px;
+  }
+  .request-table-values {
+    font-size: smaller;
+  }
+  .request-Vstack {
+    width: 100% important!;
+  }
+}

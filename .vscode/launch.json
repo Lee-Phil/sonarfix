@@ -1,0 +1,18 @@
+{
+  "configurations": [
+    {
+      "type": "node-terminal",
+      "name": "Run all test files",
+      "request": "launch",
+      "command": "npm run test",
+      "cwd": "${workspaceFolder}/server"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run current test file",
+      "request": "launch",
+      "command": "npm run test ${relativeFile}",
+      "cwd": "${workspaceFolder}/server"
+    }
+  ]
+}

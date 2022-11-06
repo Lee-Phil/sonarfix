@@ -1,0 +1,32 @@
+{
+  "name": "schedule-me",
+  "version": "1.0.0",
+  "description": "`npx prettier --write .` or alternatively, download the vscode extension and add `,\"editor.defaultFormatter\": \"esbenp.prettier-vscode\"` to your settings.json file to use prettier on-save shortcut.",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"**/src/**/*.ts\" \"**/src/**/*.tsx\" \"**/test/**/*.ts\"",
+    "prepare": "husky install",
+    "pretty-quick": "pretty-quick"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mimi-ta/schedule-me.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mimi-ta/schedule-me/issues"
+  },
+  "homepage": "https://github.com/mimi-ta/schedule-me#readme",
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^12.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.0",
+    "prettier": "^2.7.1",
+    "pretty-quick": "^3.1.3"
+  }
+}

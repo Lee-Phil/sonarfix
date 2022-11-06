@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Jost");
+
+.rbc-toolbar button:active:hover,
+.rbc-toolbar button:active:focus,
+.rbc-toolbar button.rbc-active:hover,
+.rbc-toolbar button.rbc-active:focus,
+.rbc-toolbar button:active,
+.rbc-toolbar button.rbc-active {
+  color: white !important;
+  background-color: #ff6600 !important;
+  border-color: brown !important;
+}
+
+.rbc-toolbar {
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  font-family: inherit !important;
+}
+
+.rbc-toolbar button {
+  background-color: #fda96f !important;
+  font-weight: bold !important;
+  font-family: inherit !important;
+}
+
+.rbc-toolbar .rbc-toolbar-label {
+  font-family: Jost, cursive;
+  font-size: x-large;
+}
+
+.rbc-off-range-bg {
+  background: #f9fafb !important;
+}
+
+.rbc-event,
+.rbc-day-slot .rbc-background-event {
+  background-color: #006d77 !important;
+}

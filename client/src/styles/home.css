@@ -1,0 +1,43 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.homepage-footer {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+}
+
+.homepage-logo-adjustment {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+@media only screen and (min-width: 640px) {
+  .homepage-footer-background {
+    display: flex;
+    background-color: #fda96f;
+    height: 104px;
+    position: absolute;
+    bottom: 0;
+    width: 516px;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .homepage-footer-background {
+    display: flex;
+    background-color: #fda96f;
+    height: 104px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}

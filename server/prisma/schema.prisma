@@ -1,0 +1,69 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id               Int       @id @default(autoincrement())
+  email            String    @unique
+  firstName        String
+  lastName         String
+  medicalLicense   String
+  birthday         String
+  line1            String    @unique
+  line2            String?
+  zip              String
+  city             String
+  province         String
+  phone            String
+  role             String
+  password         String
+  type             Role      @default(NURSE)
+  sentRequests     Request[] @relation("SentRequests")
+  acceptedRequests Request[] @relation("AcceptedRequests")
+}
+
+enum Role {
+  NURSE
+  SUPERVISOR
+}
+
+model Request {
+  //Request Information
+  id             Int             @id @default(autoincrement()) //I do like uuid, should be used in a refactor
+  supervisor     User            @relation("SentRequests", fields: [supervisorID], references: [id])
+  supervisorID   Int
+  nurse          User?           @relation("AcceptedRequests", fields: [nurseID], references: [id])
+  nurseID        Int?
+  startTime      String
+  endTime        String
+  specialization Specialization? @default(NONE)
+  line1          String
+  line2          String?
+  zip            String
+  city           String
+  province       String
+  phone          String
+  comments       String?
+  status         Status?         @default(UNFILLED)
+}
+
+enum Specialization {
+  NONE
+  PRIMARY_CARE
+  ADULT_CARE
+  MENTAL_HEALTH
+  PEDIATRICS
+  NEONATOLOGY
+}
+
+enum Status {
+  UNFILLED
+  FILLED
+  COMPLETED
+  CANCELLED
+}
