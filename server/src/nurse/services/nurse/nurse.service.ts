@@ -24,11 +24,9 @@ export class NurseService {
       data: nurseDto,
     });
   }
-
-  async createAnotherNurse(nurseDto: CreateNurseDto) {
-    console.log(nurseDto);
-    return await this.prisma.user.create({
-      data: nurseDto,
+  findANOTHANurseById(id: number) {
+    return this.prisma.user.findFirstOrThrow({
+      where: { id: id, type: "NURSE" },
     });
   }
 }
