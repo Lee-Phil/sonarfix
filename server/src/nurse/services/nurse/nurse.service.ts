@@ -24,4 +24,18 @@ export class NurseService {
       data: nurseDto,
     });
   }
+
+  async createAnotherNurse(nurseDto: CreateNurseDto) {
+    console.log(nurseDto);
+    return await this.prisma.user.create({
+      data: nurseDto,
+    });
+  }
+
+  async createArrayOfnurse(nurseDto: CreateNurseDto) {
+    console.log(nurseDto);
+    return await this.prisma.user.create({
+      data: nurseDto,
+    });
+  }
 }
