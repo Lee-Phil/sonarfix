@@ -37,7 +37,7 @@ describe("NurseController Unit Tests", () => {
       expect(spyNurseService.getNurses).toHaveBeenCalled();
     });
 
-    it("Get() Calls nurse Service method getNurses()", () => {
+    it("Calls nurse Service method getNurses()", () => {
       nurseController.getTestNurse();
       expect(spyNurseService.getNurses).toHaveBeenCalled();
     });
