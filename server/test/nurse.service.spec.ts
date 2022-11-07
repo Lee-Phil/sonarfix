@@ -73,6 +73,6 @@ describe("NurseService", () => {
   it("get ANTOHA is called", () => {
     const getNurseSpy = jest.spyOn(service, "findANOTHANurseById");
     service.findANOTHANurseById(1);
-    expect(getNurseSpy).toHaveBeenCalled();
+    expect(getNurseSpy).toHaveBeenCalledWith(1);
   });
 });

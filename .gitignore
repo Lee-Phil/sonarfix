@@ -86,3 +86,5 @@ fabric.properties
 */node_modules/
 **/coverage
 /node_modules
+
+server/test-report.xml
