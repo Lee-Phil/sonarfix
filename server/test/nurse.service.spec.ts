@@ -12,6 +12,9 @@ class nurseServiceMock {
   createNurse(nurseDto: CreateNurseDto) {
     return {};
   }
+  findANOTHANurseById(id: number) {
+    return {};
+  }
 }
 
 describe("NurseService", () => {
@@ -65,5 +68,11 @@ describe("NurseService", () => {
     const getNurseSpy = jest.spyOn(service, "getNurses");
     service.getNurses();
     expect(getNurseSpy).toHaveBeenCalled();
+  });
+
+  it("get ANTOHA is called", () => {
+    const getNurseSpy = jest.spyOn(service, "findANOTHANurseById");
+    service.findANOTHANurseById(1);
+    expect(getNurseSpy).toHaveBeenCalledWith(1);
   });
 });

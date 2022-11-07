@@ -13,6 +13,7 @@ describe("NurseController Unit Tests", () => {
       findNurseById: jest.fn(() => {}),
       getNurses: jest.fn(),
       createNurse: jest.fn(),
+      getTestNurse: jest.fn(),
     }),
   };
 
@@ -33,6 +34,11 @@ describe("NurseController Unit Tests", () => {
   describe("Get All Nurses", () => {
     it("Get() Calls nurse Service method getNurses()", () => {
       nurseController.getAllNurses();
+      expect(spyNurseService.getNurses).toHaveBeenCalled();
+    });
+
+    it("Calls nurse Service method getNurses()", () => {
+      nurseController.getTestNurse();
       expect(spyNurseService.getNurses).toHaveBeenCalled();
     });
   });

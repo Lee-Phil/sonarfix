@@ -33,6 +33,10 @@ export class NurseController {
     this.nurseService.createNurse(createNurseDto);
   }
 
+  @Get("")
+  getTestNurse() {
+    return this.nurseService.getNurses();
+  }
   // TODO: For future implementation in Services
   //     @Delete(':id')
   //     remove(@Param('id') id:string){

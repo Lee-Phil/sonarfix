@@ -24,4 +24,9 @@ export class NurseService {
       data: nurseDto,
     });
   }
+  findANOTHANurseById(id: number) {
+    return this.prisma.user.findFirstOrThrow({
+      where: { id: id, type: "NURSE" },
+    });
+  }
 }
