@@ -36,7 +36,10 @@ export class NurseController {
   getTestNurse() {
     return this.nurseService.getNurses();
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ce24ceb (Testing the dependency)
   // TODO: For future implementation in Services
   //     @Delete(':id')
   //     remove(@Param('id') id:string){
