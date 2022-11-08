@@ -32,6 +32,10 @@ export class NurseController {
   createNurse(@Body() createNurseDto: CreateNurseDto) {
     this.nurseService.createNurse(createNurseDto);
   }
+  @Get("test")
+  getTestNurse() {
+    return this.nurseService.getNurses();
+  }
 
   // TODO: For future implementation in Services
   //     @Delete(':id')
