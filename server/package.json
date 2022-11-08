@@ -87,8 +87,7 @@
     "preset": "ts-jest",
     "moduleNameMapper": {
       "^src/(.*)$": "<rootDir>/$1"
-    },
-    "testResultsProcessor": "jest-sonar-reporter"
+    }
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
