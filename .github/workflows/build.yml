@@ -1,6 +1,10 @@
 name: sonars
 on:
   push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened]
 jobs:
   sonarcloud:
     name: SonarCloud
@@ -16,7 +20,7 @@ jobs:
       - name: Test and coverage
         run: |
           cd server
-          npm run test
+          npm run test -- --coverage
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
