@@ -47,6 +47,7 @@
     "@types/supertest": "^2.0.11",
     "jest": "^28.1.3",
     "jest-mock-extended": "^3.0.1",
+    "jest-sonar-reporter": "^2.0.0",
     "prisma": "^4.4.0",
     "source-map-support": "^0.5.20",
     "supertest": "^6.1.3",
@@ -86,7 +87,8 @@
     "preset": "ts-jest",
     "moduleNameMapper": {
       "^src/(.*)$": "<rootDir>/$1"
-    }
+    },
+    "testResultsProcessor": "jest-sonar-reporter"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
