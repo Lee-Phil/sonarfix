@@ -86,3 +86,4 @@ fabric.properties
 */node_modules/
 **/coverage
 /node_modules
+package-lock.json
