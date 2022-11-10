@@ -29,6 +29,11 @@ jobs:
       - name: Test and coverage
         run: |
           cd client
+          npm run build
+
+      - name: Test and coverage
+        run: |
+          cd client
           npx playwright test
 
       - name: SonarCloud Scan
