@@ -29,7 +29,7 @@ jobs:
       - name: Test and coverage
         run: |
           cd client
-          npx nyc next dev && npx playwright test
+          npx playwright test
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
