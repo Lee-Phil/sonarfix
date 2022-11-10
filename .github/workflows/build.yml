@@ -26,6 +26,7 @@ jobs:
         run: |
           cd client
           npm install
+
       - name: Test and coverage
         run: |
           cd client
