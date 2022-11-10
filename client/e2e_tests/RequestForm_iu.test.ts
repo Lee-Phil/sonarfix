@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "playwright-test-coverage";
 test("SCH-109: Testing that all text field tags have rendered properly", async ({ page }) => {
   await page.goto("http://localhost:3000/");
   await page.getByRole("button", { name: "LOGIN" }).click();
