@@ -1,4 +1,4 @@
-name: sonars
+name: sonar-istanbul
 on:
   push:
     branches:
