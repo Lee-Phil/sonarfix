@@ -1,5 +1,5 @@
-import { expect, test } from "@playwright/test";
-const requests = require("./test-data/requests.json");
+import { test, expect } from "playwright-test-coverage";
+import requests from "./test-data/requests.json";
 
 test.beforeEach(async ({ page }) => {
   await page.route("**/api/request/search/amountRequests/**/**", async (route, request) => {
