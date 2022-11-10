@@ -27,7 +27,7 @@ jobs:
           cd client
           npm install
 
-      - name: Test and coverage
+      - name: build
         run: |
           cd client
           npm run build
@@ -37,6 +37,7 @@ jobs:
           cd client
           npx playwright test
           npx nyc report --reporter=lcov
+
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
