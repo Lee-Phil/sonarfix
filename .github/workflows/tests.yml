@@ -7,6 +7,7 @@
 #     name: Jest-Tests
 #     runs-on: ubuntu-latest
 #     timeout-minutes: 15
+
 #     steps:
 #       - uses: actions/checkout@v2
 #       - name: Installing Dependicies in Server
@@ -22,6 +23,8 @@
 #     timeout-minutes: 15
 #     name: Playwright-Tests
 #     runs-on: ubuntu-latest
+#     timeout-minutes: 15
+
 #     steps:
 #       - uses: actions/checkout@v3
 #       - uses: actions/setup-node@v2
@@ -44,5 +47,6 @@
 #     name: K6-Tests
 #     timeout-minutes: 15
 #     runs-on: ubuntu-latest
+#     timeout-minutes: 15
 #     steps:
 #       - uses: actions/checkout@v2
