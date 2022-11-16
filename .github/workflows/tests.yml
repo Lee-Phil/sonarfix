@@ -6,6 +6,7 @@
 #   jest-tests:
 #     name: Jest-Tests
 #     runs-on: ubuntu-latest
+#     timeout-minutes: 15
 
 #     steps:
 #       - uses: actions/checkout@v2
@@ -21,6 +22,8 @@
 #   playwright-tests:
 #     name: Playwright-Tests
 #     runs-on: ubuntu-latest
+#     timeout-minutes: 15
+
 #     steps:
 #       - uses: actions/checkout@v3
 #       - uses: actions/setup-node@v2
@@ -42,5 +45,6 @@
 #   k6tests:
 #     name: K6-Tests
 #     runs-on: ubuntu-latest
+#     timeout-minutes: 15
 #     steps:
 #       - uses: actions/checkout@v2
