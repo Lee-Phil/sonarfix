@@ -8,7 +8,7 @@ const config: PlaywrightTestConfig = {
   expect: {
     /**
      * Maximum time expect() should wait for the condition to be met.
-     * For example in `await expect(locator).toHaveText();`
+     * For example in `await expect¨(locator).toHaveText();`
      */
     timeout: 5000,
   },
@@ -63,9 +63,12 @@ const config: PlaywrightTestConfig = {
   /* Run your local dev server before starting the tests */
   webServer: {
     reuseExistingServer: true,
-    command: "npm run start",
-    port: 3000,
+    command: "npm run dev",
+    url: "http://localhost:3000/",
+    timeout: 120 * 1000,
+    
   },
+  
 };
 
 export default config;
