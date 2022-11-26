@@ -1,49 +1,51 @@
-# name: Test
-# on:
-#   push:
-#     branches:
-# jobs:
-#   jest-tests:
-#     name: Jest-Tests
-#     runs-on: ubuntu-latest
-#     timeout-minutes: 15
+name: Test
+on:
+  push:
+    branches:
+jobs:
+  # jest-tests:
+  #   name: Jest-Tests
+  #   runs-on: ubuntu-latest
+  #   timeout-minutes: 15
 
-#     steps:
-#       - uses: actions/checkout@v2
-#       - name: Installing Dependicies in Server
-#         run: |
-#           cd server
-#           npm install
-#       - name: Running Tests
-#         run: |
-#           cd server
-#           npm test
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - name: Installing Dependicies in Server
+  #       run: |
+  #         cd server
+  #         npm install
+  #     - name: Running Tests
+  #       run: |
+  #         cd server
+  #         npm test
 
-#   playwright-tests:
-#     name: Playwright-Tests
-#     runs-on: ubuntu-latest
-#     timeout-minutes: 15
-
-#     steps:
-#       - uses: actions/checkout@v3
-#       - uses: actions/setup-node@v2
-#       - name: Install dependencies
-#         run: |
-#           cd client
-#           npm ci
-#           npm run build
-#       - name: Install Playwright
-#         run: |
-#           cd client
-#           npx playwright install --with-deps
-#       - name: Run your tests
-#         run: |
-#           cd client
-#           npx playwright test
+  playwright-tests:
+    name: Playwright-Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    container:
+      image: mcr.microsoft.com/playwright:v1.28.0-focal
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v2
+      - name: Install dependencies
+        run: |
+          cd client
+          npm ci
+          npm run build
+      - name: Install Playwright
+        run: |
+          cd client
+          npx playwright install --with-deps
+      - name: Run your tests
+        run: |
+          cd client
+          npx playwright test
 
 #   #to be done after
 #   k6tests:
 #     name: K6-Tests
+#     timeout-minutes: 15
 #     runs-on: ubuntu-latest
 #     timeout-minutes: 15
 #     steps:
