@@ -2,6 +2,7 @@ import { Table, Thead, Tbody, Tr, Th, Td, Box, Flex } from "@chakra-ui/react";
 
 const TableHeaders: Array<string> = ["Name", "Start", "Status"];
 export default function RequestTable({ requests }) {
+  requests = [];
   return (
     <>
       <Flex justifyContent="center">
