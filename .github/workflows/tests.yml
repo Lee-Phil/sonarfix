@@ -1,23 +1,23 @@
-# name: Test
-# on:
-#   push:
-#     branches:
-# jobs:
-#   jest-tests:
-#     name: Jest-Tests
-#     runs-on: ubuntu-latest
-#     timeout-minutes: 15
+name: Test
+on:
+  push:
+    branches:
+jobs:
+  # jest-tests:
+  #   name: Jest-Tests
+  #   runs-on: ubuntu-latest
+  #   timeout-minutes: 15
 
-#     steps:
-#       - uses: actions/checkout@v2
-#       - name: Installing Dependicies in Server
-#         run: |
-#           cd server
-#           npm install
-#       - name: Running Tests
-#         run: |
-#           cd server
-#           npm test
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - name: Installing Dependicies in Server
+  #       run: |
+  #         cd server
+  #         npm install
+  #     - name: Running Tests
+  #       run: |
+  #         cd server
+  #         npm test
 
   playwright-tests:
     name: Playwright-Tests
