@@ -1,6 +1,7 @@
 import { Button, Flex, HStack } from "@chakra-ui/react";
 
 export default function Pagination({ totalPages, setCurrPage }) {
+  totalPages = 1;
   return (
     <>
       <Flex justifyContent={"center"}>

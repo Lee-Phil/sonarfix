@@ -1,4 +1,4 @@
-import { test } from "@playwright/test";
+import { test, expect } from "playwright-test-coverage";
 
 test("Calendar_is_present", async ({ page }) => {
   await page.goto("http://localhost:3000/calendar");

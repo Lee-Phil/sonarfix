@@ -33,6 +33,8 @@
     "@types/node": "^18.11.7",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "babel-plugin-istanbul": "^6.1.1",
+    "playwright-test-coverage": "^1.2.5",
     "typescript": "^4.7.2"
   }
 }
